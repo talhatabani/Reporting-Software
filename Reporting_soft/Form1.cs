@@ -37,5 +37,10 @@ namespace Reporting_soft
             this.reportViewer1.LocalReport.ReportEmbeddedResource = reportName;
             this.reportViewer1.RefreshReport();
         }
+
+        private void reportViewer1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

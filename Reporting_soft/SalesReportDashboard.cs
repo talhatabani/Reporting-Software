@@ -21,7 +21,7 @@ namespace Reporting_soft
 
         private void generate_report_Click(object sender, EventArgs e)
         {
-            SqlCommand sc = new SqlCommand("Report_AllOrders", ConnectionString.GetConnection());
+            SqlCommand sc = new SqlCommand("Report_AllData", ConnectionString.GetConnection());
             sc.CommandType = CommandType.StoredProcedure;
             sc.Parameters.AddWithValue("@ParamTable1", from.Value.Date);
             sc.Parameters.AddWithValue("@ParamTable2", to.Value.Date);
